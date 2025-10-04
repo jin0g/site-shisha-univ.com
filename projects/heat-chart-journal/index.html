@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vol.01 適温チャート統合ログ | 学科横断プロジェクト</title>
+  <link rel="stylesheet" href="assets/css/css.css">
+  <script defer src="assets/js/js.js"></script>
+</head>
+<body>
+  <header>
+    <div class="wrapper">
+      <div class="site-title">
+        <span>水煙草大学</span>
+        <span class="tagline">Shisha University Portal</span>
+      </div>
+      <nav aria-label="主要ナビゲーション">
+        <ul>
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="equipment/index.html">機材学部</a></li>
+          <li><a href="flavor/index.html">フレーバー学部</a></li>
+          <li><a href="store/index.html">店舗学部</a></li>
+          <li><a href="projects/index.html" aria-current="page">学科横断プロジェクト</a></li>
+        </ul>
+      </nav>
+      <noscript class="notice">ブラウザで戻るボタンをご利用ください。</noscript>
+    </div>
+  </header>
+
+  <main class="wrapper">
+    <section class="section">
+      <div class="section-header">
+        <h1>Vol.01 適温チャート統合ログ</h1>
+        <p>公開日 2025-04-02 / 執筆：横断プロジェクトセンター</p>
+      </div>
+      <div class="project-highlight">
+        <h3>プロジェクト概要</h3>
+        <p>機材学部が収集した温度データと、フレーバー学部の香り評価を統合するための初期チャートを構築しました。店舗学部のフィールドワークで得た再現性スコアも反映しています。</p>
+        <ul>
+          <li>温度帯は低温（180-190℃）、中温（195-205℃）、高温（210-220℃）で区切り</li>
+          <li>香り評価は甘味・酸味・スパイス・ミントの4指標を五段階で採点</li>
+          <li>再現性スコアは店舗学部10店舗での平均満足度を採用</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <h2>チャート試作版</h2>
+        <p>初版チャートの読み方と、今後の更新ポイントをまとめました。</p>
+      </div>
+      <div class="card-grid">
+        <article class="card">
+          <div class="card-body">
+            <h3>読み方</h3>
+            <p>ヒートゾーン×フレーバー特性のマトリクスで構成。ゾーンごとの推奨炭配置と時間経過の味変カーブを重ねています。</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-body">
+            <h3>改善予定</h3>
+            <p>センサー値の粒度向上と、吸引量の個人差を補正するアルゴリズムを追加する予定です。</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="project-highlight">
+        <h3>関連リソース</h3>
+        <p>計測プロトコルとフィールドワーク報告は各学部の研究ログで参照できます。</p>
+        <div class="legend">
+          <span style="color: var(--primary);">機材学部</span>
+          <span style="color: var(--accent);">フレーバー学部</span>
+          <span style="color: #26a69a;">店舗学部</span>
+        </div>
+        <a class="button" href="equipment/heat-management/index.html">機材学部ログ</a>
+        <a class="button" href="flavor/berry-labs/index.html" style="background: var(--accent); color: var(--text); box-shadow: 0 12px 24px rgba(255, 183, 77, 0.35);">フレーバー学部ログ</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrapper footer">
+    <p>© 水煙草大学 プロジェクトセンター.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>研究ログ | ヒートマネジメント計測プロトコル</title>
+  <link rel="stylesheet" href="assets/css/css.css">
+  <script defer src="assets/js/js.js"></script>
+</head>
+<body>
+  <header>
+    <div class="wrapper">
+      <div class="site-title">
+        <span>水煙草大学</span>
+        <span class="tagline">Shisha University Portal</span>
+      </div>
+      <nav aria-label="主要ナビゲーション">
+        <ul>
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="equipment/index.html" aria-current="page">機材学部</a></li>
+          <li><a href="flavor/index.html">フレーバー学部</a></li>
+          <li><a href="store/index.html">店舗学部</a></li>
+          <li><a href="projects/index.html">学科横断プロジェクト</a></li>
+        </ul>
+      </nav>
+      <noscript class="notice">ブラウザで戻るボタンをご利用ください。</noscript>
+    </div>
+  </header>
+
+  <main class="wrapper">
+    <section class="section">
+      <div class="section-header">
+        <h1>研究ログ：ヒートマネジメント計測プロトコル</h1>
+        <p>機材学部 ヒートマネジメント学科 / 記録日 2025-04-01</p>
+      </div>
+      <div class="project-highlight">
+        <h3>概要</h3>
+        <p>炭配置と吸気量の変化が温度に与える影響を、サーモカメラと熱電対を併用して計測するテンプレートを構築しました。温度帯の閾値設定をフレーバー学部と共有するための下準備です。</p>
+        <ul>
+          <li>計測ポイントをボウル上部・中層・下層の三段に設定</li>
+          <li>吸引シミュレータで 5 L/min と 8 L/min の二種類を比較</li>
+          <li>ログはCSV形式で保存し、プロジェクトブログへ連携</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <h2>計測ステップ</h2>
+        <p>実験を再現するための基本シーケンスです。</p>
+      </div>
+      <div class="card-grid">
+        <article class="card">
+          <div class="card-body">
+            <h3>1. 機材セットアップ</h3>
+            <p>セラミックボウルに 15 g のベリー系ブレンドを詰め、HMDは3ピース構成で配置。炭はキューブタイプを使用します。</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-body">
+            <h3>2. 温度センサー配置</h3>
+            <p>熱電対はボウル中心へ垂直に、サーモカメラは俯瞰位置へ固定。ベース温度の記録後、2分毎に値を取得します。</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-body">
+            <h3>3. データ整理</h3>
+            <p>吸引シミュレータのログと温度データを同期し、適温ゾーンを抽出。CSVは学内リポジトリで共有予定です。</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <h2>次のアクション</h2>
+        <p>横断プロジェクトとの連携で公開予定のコンテンツです。</p>
+      </div>
+      <div class="project-highlight">
+        <p>フレーバー学部と共同で、得られた温度帯データに香りの変化スコアを付与します。店舗学部には実店舗での再現性チェックを依頼中です。</p>
+        <a class="button" href="projects/heat-chart-journal/index.html">関連ブログ記事へ</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrapper footer">
+    <p>© 水煙草大学 機材学部.</p>
+  </footer>
+</body>
+</html>
